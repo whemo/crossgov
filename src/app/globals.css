@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  /* Realms Dark Mode Palette */
+  --bkg-1: 220 25% 9%;
+  --bkg-2: 220 25% 15%;
+  --bkg-3: 220 25% 21%;
+  --bkg-4: 220 25% 27%;
+
+  --fgd-1: 220 17% 95%;
+  --fgd-2: 220 17% 85%;
+  --fgd-3: 220 17% 75%;
+  --fgd-4: 220 17% 65%;
+
+  --active: 203 100% 59%;
+  --active-dark: 203 100% 31%;
+
+  --error: 346 99% 64%;
+  --error-muted: 346 99% 34%;
+  --success: 153 99% 47%;
+  --success-muted: 153 99% 27%;
+  --warning: 42 100% 59%;
+}
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+
+  /* Map extracted colors */
+  --color-bkg-1: hsl(var(--bkg-1));
+  --color-bkg-2: hsl(var(--bkg-2));
+  --color-bkg-3: hsl(var(--bkg-3));
+  --color-bkg-4: hsl(var(--bkg-4));
+
+  --color-fgd-1: hsl(var(--fgd-1));
+  --color-fgd-2: hsl(var(--fgd-2));
+  --color-fgd-3: hsl(var(--fgd-3));
+  --color-fgd-4: hsl(var(--fgd-4));
+
+  --color-primary: hsl(var(--active));
+  --color-primary-dark: hsl(var(--active-dark));
+
+  --color-error: hsl(var(--error));
+  --color-error-muted: hsl(var(--error-muted));
+  --color-success: hsl(var(--success));
+  --color-success-muted: hsl(var(--success-muted));
+  --color-warning: hsl(var(--warning));
+
+  /* Overrides for global UI */
+  --color-background: var(--color-bkg-1);
+  --color-foreground: var(--color-fgd-1);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+/* Override Solana wallet adapter button styles */
+.wallet-adapter-button {
+  background: var(--color-primary) !important;
+  color: #ffffff !important;
+  border-radius: 4px !important;
+  font-size: 16px !important;
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+  height: 48px !important;
+  padding: 0 24px !important;
+  transition: all 0.2s !important;
+  border: none !important;
+}
+
+.wallet-adapter-button:hover:not([disabled]) {
+  background-color: var(--color-primary-dark) !important;
+}
+
+.wallet-adapter-button-trigger {
+  background: var(--color-primary) !important;
+}
+
+.wallet-adapter-modal-wrapper {
+  background-color: var(--color-bkg-2) !important;
+  border: 1px solid var(--color-bkg-3) !important;
+  font-family: var(--font-sans) !important;
+}
+
+.wallet-adapter-modal-button-close {
+  background-color: var(--color-bkg-3) !important;
+}

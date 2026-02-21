@@ -1,0 +1,318 @@
+[
+  {
+    "id": "6c185418-d954-4e66-b15f-e814aa23815c",
+    "title": "Joint Liquidity Pool Merge",
+    "description": "DAO1 and DAO2 merge their Raydium pools (DAO1's USDC + DAO2's SOL) into one shared vault, requiring both approvals for 50/50 control and withdrawals.",
+    "creator": "2d8MKvPQrkSaRrxwujuijUTL3SCeBZgYnvT2wqnDd3w6",
+    "participants": [
+      {
+        "realmAddress": "By2sVGZXwfQq6rAiAM3rNPJ9iQfb5e2QhnF4YjJ4Bip",
+        "realmName": "Grape",
+        "proposalAddress": "H8YvZDrZKWHoRfwG25wBEcFDtjvods6fQgSeSJY1mDFp",
+        "proposalName": "Approve Withdrawl Inactive SOL (36.5) for Re-Delegation",
+        "status": "approved",
+        "yesVotes": 146954512.174867,
+        "noVotes": 0,
+        "totalVoters": 0,
+        "weight": 1,
+        "maxVoteWeight": 999653632.711259,
+        "maxVoteWeightRaw": 999653632711259,
+        "quorum": 39986145.30845036,
+        "quorumRaw": 39986145308450.37,
+        "yesVotesRaw": 146954512174867,
+        "noVotesRaw": 0,
+        "daoType": "token",
+        "votingChannel": "community",
+        "governanceParams": {}
+      },
+      {
+        "realmAddress": "5iSfe28ATpPuJWnZQR53sUyWKEsTGkWKet8Hzu9ar8u9",
+        "realmName": "Takisoul test DAO",
+        "proposalAddress": "9t1RRxkBYpMz2PHezBvBnbwkh4sSaHscjW8TUjqmShB7",
+        "proposalName": "Acquire SNS domain for DAO",
+        "status": "finalizing",
+        "yesVotes": 5200000,
+        "noVotes": 0,
+        "totalVoters": 0,
+        "weight": 1,
+        "maxVoteWeight": 19500000,
+        "maxVoteWeightRaw": 0,
+        "quorum": 585000,
+        "quorumRaw": 585000000000,
+        "yesVotesRaw": 5200000000000,
+        "noVotesRaw": 0,
+        "daoType": "token",
+        "votingChannel": "community",
+        "governanceParams": {}
+      }
+    ],
+    "approvalCondition": "all",
+    "status": "approved",
+    "statusHistory": [
+      {
+        "status": "active",
+        "timestamp": 1771673338931,
+        "label": "Cross-proposal created"
+      },
+      {
+        "status": "approved",
+        "timestamp": 1771673339199,
+        "label": "Grape → Approved"
+      },
+      {
+        "status": "finalizing",
+        "timestamp": 1771673339199,
+        "label": "Takisoul test DAO → Finalizing"
+      },
+      {
+        "status": "approved",
+        "timestamp": 1771673339199,
+        "label": "Overall → Approved"
+      }
+    ],
+    "createdAt": 1771673338931,
+    "expiresAt": 1772150400000
+  },
+  {
+    "id": "e883a4eb-86c4-4dfe-91d0-f53e08b5e482",
+    "title": "Shared NFT Royalty Vault",
+    "description": "DAO1, DAO2 and DAO3 pool NFT royalties into a joint Solana program vault, they must vote to spend (e.g., marketing budget), splitting proceeds 40/30/30",
+    "creator": "2d8MKvPQrkSaRrxwujuijUTL3SCeBZgYnvT2wqnDd3w6",
+    "participants": [
+      {
+        "realmAddress": "By2sVGZXwfQq6rAiAM3rNPJ9iQfb5e2QhnF4YjJ4Bip",
+        "realmName": "Grape",
+        "proposalAddress": "H8YvZDrZKWHoRfwG25wBEcFDtjvods6fQgSeSJY1mDFp",
+        "proposalName": "Approve Withdrawl Inactive SOL (36.5) for Re-Delegation",
+        "status": "approved",
+        "yesVotes": 146954512.174867,
+        "noVotes": 0,
+        "totalVoters": 0,
+        "weight": 1,
+        "maxVoteWeight": 999653632.711259,
+        "maxVoteWeightRaw": 999653632711259,
+        "quorum": 39986145.30845036,
+        "quorumRaw": 39986145308450.37,
+        "yesVotesRaw": 146954512174867,
+        "noVotesRaw": 0,
+        "daoType": "token",
+        "votingChannel": "community",
+        "governanceParams": {}
+      },
+      {
+        "realmAddress": "5iSfe28ATpPuJWnZQR53sUyWKEsTGkWKet8Hzu9ar8u9",
+        "realmName": "Takisoul test DAO",
+        "proposalAddress": "9t1RRxkBYpMz2PHezBvBnbwkh4sSaHscjW8TUjqmShB7",
+        "proposalName": "Acquire SNS domain for DAO",
+        "status": "finalizing",
+        "yesVotes": 5200000,
+        "noVotes": 0,
+        "totalVoters": 0,
+        "weight": 1,
+        "maxVoteWeight": 19500000,
+        "maxVoteWeightRaw": 0,
+        "quorum": 585000,
+        "quorumRaw": 585000000000,
+        "yesVotesRaw": 5200000000000,
+        "noVotesRaw": 0,
+        "daoType": "token",
+        "votingChannel": "community",
+        "governanceParams": {}
+      },
+      {
+        "realmAddress": "84pGFuy1Y27ApK67ApethaPvexeDWA66zNV8gm38TVeQ",
+        "realmName": "Bonk DAO",
+        "proposalAddress": "eH9AboTTZe9p7KnG5rGCEHJybTjvGMnHCAUWVTPmvbW",
+        "proposalName": "BIP # 75",
+        "status": "approved",
+        "yesVotes": 0.00008,
+        "noVotes": 0,
+        "totalVoters": 0,
+        "weight": 1,
+        "maxVoteWeight": 0.00011,
+        "maxVoteWeightRaw": 11,
+        "quorum": 0.0000011,
+        "quorumRaw": 0.11,
+        "yesVotesRaw": 8,
+        "noVotesRaw": 0,
+        "daoType": "token",
+        "votingChannel": "multisig",
+        "governanceParams": {}
+      }
+    ],
+    "approvalCondition": "majority",
+    "status": "approved",
+    "statusHistory": [
+      {
+        "status": "active",
+        "timestamp": 1771673446284,
+        "label": "Cross-proposal created"
+      },
+      {
+        "status": "approved",
+        "timestamp": 1771673446820,
+        "label": "Grape → Approved"
+      },
+      {
+        "status": "finalizing",
+        "timestamp": 1771673446820,
+        "label": "Takisoul test DAO → Finalizing"
+      },
+      {
+        "status": "approved",
+        "timestamp": 1771673446820,
+        "label": "Bonk DAO → Approved"
+      },
+      {
+        "status": "approved",
+        "timestamp": 1771673446820,
+        "label": "Overall → Approved"
+      }
+    ],
+    "createdAt": 1771673446284,
+    "expiresAt": 1772236800000
+  },
+  {
+    "id": "1fdffa95-baf2-459c-9526-809b27e2e76d",
+    "title": "Cross-DAO Yield Farm Alliance",
+    "description": "DAO1 and DAO2 provides Orca farm positions while DAO23 adds governance tokens; they co-decide APY parameters and harvest timing via CPI-linked vote.",
+    "creator": "2d8MKvPQrkSaRrxwujuijUTL3SCeBZgYnvT2wqnDd3w6",
+    "participants": [
+      {
+        "realmAddress": "84pGFuy1Y27ApK67ApethaPvexeDWA66zNV8gm38TVeQ",
+        "realmName": "Bonk DAO",
+        "proposalAddress": "eH9AboTTZe9p7KnG5rGCEHJybTjvGMnHCAUWVTPmvbW",
+        "proposalName": "BIP # 75",
+        "status": "approved",
+        "yesVotes": 0.00008,
+        "noVotes": 0,
+        "totalVoters": 0,
+        "weight": 30,
+        "maxVoteWeight": 0.00011,
+        "maxVoteWeightRaw": 11,
+        "quorum": 0.0000011,
+        "quorumRaw": 0.11,
+        "yesVotesRaw": 8,
+        "noVotesRaw": 0,
+        "daoType": "token",
+        "votingChannel": "multisig",
+        "governanceParams": {}
+      },
+      {
+        "realmAddress": "5iSfe28ATpPuJWnZQR53sUyWKEsTGkWKet8Hzu9ar8u9",
+        "realmName": "Takisoul test DAO",
+        "proposalAddress": "9t1RRxkBYpMz2PHezBvBnbwkh4sSaHscjW8TUjqmShB7",
+        "proposalName": "Acquire SNS domain for DAO",
+        "status": "finalizing",
+        "yesVotes": 5200000,
+        "noVotes": 0,
+        "totalVoters": 0,
+        "weight": 70,
+        "maxVoteWeight": 19500000,
+        "maxVoteWeightRaw": 0,
+        "quorum": 585000,
+        "quorumRaw": 585000000000,
+        "yesVotesRaw": 5200000000000,
+        "noVotesRaw": 0,
+        "daoType": "token",
+        "votingChannel": "community",
+        "governanceParams": {}
+      }
+    ],
+    "approvalCondition": "weighted",
+    "status": "approved",
+    "statusHistory": [
+      {
+        "status": "active",
+        "timestamp": 1771673548377,
+        "label": "Cross-proposal created"
+      },
+      {
+        "status": "approved",
+        "timestamp": 1771673548600,
+        "label": "Bonk DAO → Approved"
+      },
+      {
+        "status": "finalizing",
+        "timestamp": 1771673548600,
+        "label": "Takisoul test DAO → Finalizing"
+      },
+      {
+        "status": "approved",
+        "timestamp": 1771673548600,
+        "label": "Overall → Approved"
+      }
+    ],
+    "createdAt": 1771673548377,
+    "expiresAt": 1772150400000
+  },
+  {
+    "id": "b279c96b-25b9-47a1-bfa4-dc2634cd0b6e",
+    "title": "123test",
+    "description": "123teest",
+    "creator": "2d8MKvPQrkSaRrxwujuijUTL3SCeBZgYnvT2wqnDd3w6",
+    "participants": [
+      {
+        "realmAddress": "8kMQi8j2pPUt9AUXWBCQbfeCBQoFd7fjErTQA1Fc4aLK",
+        "realmName": "College DAO",
+        "proposalAddress": "FAbhyXHTtEMtqkt3Z3JqjzKDLe32sPEBDREU8EjYoNFN",
+        "proposalName": "Add Metadata for CollegeDAO",
+        "status": "voting",
+        "yesVotes": 0.000002,
+        "noVotes": 0,
+        "totalVoters": 0,
+        "weight": 70,
+        "maxVoteWeight": 0,
+        "maxVoteWeightRaw": 0,
+        "quorum": 0,
+        "quorumRaw": 0,
+        "yesVotesRaw": 2,
+        "noVotesRaw": 0,
+        "daoType": "multisig",
+        "votingChannel": "multisig",
+        "governanceParams": {}
+      },
+      {
+        "realmAddress": "84pGFuy1Y27ApK67ApethaPvexeDWA66zNV8gm38TVeQ",
+        "realmName": "Bonk DAO",
+        "proposalAddress": "eH9AboTTZe9p7KnG5rGCEHJybTjvGMnHCAUWVTPmvbW",
+        "proposalName": "BIP # 75",
+        "status": "approved",
+        "yesVotes": 0.00008,
+        "noVotes": 0,
+        "totalVoters": 0,
+        "weight": 30,
+        "maxVoteWeight": 0.00011,
+        "maxVoteWeightRaw": 11,
+        "quorum": 0.0000011,
+        "quorumRaw": 0.11,
+        "yesVotesRaw": 8,
+        "noVotesRaw": 0,
+        "daoType": "token",
+        "votingChannel": "multisig",
+        "governanceParams": {}
+      }
+    ],
+    "approvalCondition": "weighted",
+    "status": "active",
+    "statusHistory": [
+      {
+        "status": "active",
+        "timestamp": 1771674108439,
+        "label": "Cross-proposal created"
+      },
+      {
+        "status": "voting",
+        "timestamp": 1771674108643,
+        "label": "College DAO → Voting"
+      },
+      {
+        "status": "approved",
+        "timestamp": 1771674108643,
+        "label": "Bonk DAO → Approved"
+      }
+    ],
+    "createdAt": 1771674108439,
+    "expiresAt": 1771977600000
+  }
+]
