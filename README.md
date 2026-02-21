@@ -26,6 +26,58 @@ When DAOs need to coordinate joint decisions, CrossGov allows them to:
 - **Wallet Integration** — Phantom & Solflare support
 - **Responsive Design** — Works on desktop and mobile
 
+## Roadmap
+
+### v1.0 — Coordination Layer (Current)
+
+**Implemented in this release**
+
+- Link proposals from multiple DAOs into cross-proposals
+- Real-time voting status from on-chain data
+- 4 approval conditions (Unanimous, Majority, Weighted, First Response)
+- Dashboard with live tracking
+- Proposal detail pages with vote feed
+
+**How it works:**
+
+DAO A creates proposal: "Transfer 50k USDC to address X"
+DAO B creates proposal: "Allocate 500k tokens to pool"
+Both proposals are linked via CrossGov.
+
+DAO A votes Yes. DAO B votes No.
+CrossGov shows: **"Rejected — DAO B declined"**.
+
+**Important:** CrossGov is a **coordination tool, not blocking**. It cannot prevent DAO A from executing their proposal if it passed. But it provides transparency — participants see the other side rejected, so they know not to execute.
+
+**Real-world protection:** If DAO A sends funds after DAO B rejected, it's a public reputational risk. All proposals are on-chain, fully transparent.
+
+---
+
+### v2.0 — Escrow Protection (Planned)
+
+**Smart contract escrow for atomic execution**
+
+The real solution to coordination risk:
+
+1. Both DAOs deposit funds/assets into a smart contract escrow
+2. Escrow holds funds while voting happens
+3. If all DAOs approve → funds are released to intended recipients
+4. If any DAO rejects → funds return to original owners
+
+**Benefits:**
+- No counterparty risk
+- Atomic execution — all or nothing
+- No reputational games needed
+
+---
+
+### v3.0 — Advanced Features (Future)
+
+- Conditional proposal templates (if/then logic)
+- Automated execution via keeper networks
+- Cross-DAO treasury management
+- Governance analytics and insights
+
 ## Tech Stack
 
 - **Framework:** Next.js 16 (App Router, TypeScript)
@@ -80,58 +132,6 @@ Get your free Helius API key at [https://helius.dev](https://helius.dev)
 ## Built For
 
 **Solana Graveyard Hackathon** — Realms bounty (Governance Builders / Realms Extensions)
-
-## Roadmap
-
-### v1.0 — Coordination Layer (Current)
-
-**Implemented in this release**
-
-- Link proposals from multiple DAOs into cross-proposals
-- Real-time voting status from on-chain data
-- 4 approval conditions (Unanimous, Majority, Weighted, First Response)
-- Dashboard with live tracking
-- Proposal detail pages with vote feed
-
-**How it works:**
-
-DAO A creates proposal: "Transfer 50k USDC to address X"
-DAO B creates proposal: "Allocate 500k tokens to pool"
-Both proposals are linked via CrossGov.
-
-DAO A votes Yes. DAO B votes No.
-CrossGov shows: **"Rejected — DAO B declined"**.
-
-**Important:** CrossGov is a **coordination tool, not blocking**. It cannot prevent DAO A from executing their proposal if it passed. But it provides transparency — participants see the other side rejected, so they know not to execute.
-
-**Real-world protection:** If DAO A sends funds after DAO B rejected, it's a public reputational risk. All proposals are on-chain, fully transparent.
-
----
-
-### v2.0 — Escrow Protection (Planned)
-
-**Smart contract escrow for atomic execution**
-
-The real solution to coordination risk:
-
-1. Both DAOs deposit funds/assets into a smart contract escrow
-2. Escrow holds funds while voting happens
-3. If all DAOs approve → funds are released to intended recipients
-4. If any DAO rejects → funds return to original owners
-
-**Benefits:**
-- No counterparty risk
-- Atomic execution — all or nothing
-- No reputational games needed
-
----
-
-### v3.0 — Advanced Features (Future)
-
-- Conditional proposal templates (if/then logic)
-- Automated execution via keeper networks
-- Cross-DAO treasury management
-- Governance analytics and insights
 
 ## License
 
