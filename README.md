@@ -120,19 +120,6 @@ Create a `.env.local` file in the root directory:
 NEXT_PUBLIC_SOLANA_RPC_URL=https://mainnet.helius-rpc.com/?api-key=YOUR_API_KEY
 ```
 
-Get your free Helius API key at [https://helius.dev](https://helius.dev)
-
-## Deploy to Vercel
-
-1. Push your code to GitHub
-2. Import your repository in [Vercel](https://vercel.com)
-3. Add the `NEXT_PUBLIC_SOLANA_RPC_URL` environment variable in Vercel settings
-4. Deploy
-
-## Built For
-
-**Solana Graveyard Hackathon** — Realms bounty (Governance Builders / Realms Extensions)
-
 ## License
 
 MIT
