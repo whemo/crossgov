@@ -1,8 +1,8 @@
-# CrossGov — Cross-DAO Coordination for Solana Realms
+# CrossGov - Cross-DAO Coordination for Solana Realms ^^
 
 CrossGov is a coordination layer for Solana DAOs built on top of [Realms](https://realms.today). It enables multiple DAOs to link their proposals into a single **cross-proposal** with configurable approval conditions and real-time on-chain voting tracking.
 
-## What It Does
+## What It Does???
 
 When DAOs need to coordinate joint decisions, CrossGov allows them to:
 
@@ -28,7 +28,7 @@ When DAOs need to coordinate joint decisions, CrossGov allows them to:
 
 ## Roadmap
 
-### v1.0 — Coordination Layer (Current)
+### v1.0 - Coordination Layer (Current)
 
 **Implemented in this release**
 
@@ -53,7 +53,7 @@ CrossGov shows: **"Rejected — DAO B declined"**.
 
 ---
 
-### v2.0 — Escrow Protection (Planned)
+### v2.0 - Escrow Protection (Planned)
 
 **Smart contract escrow for atomic execution**
 
@@ -71,7 +71,7 @@ The real solution to coordination risk:
 
 ---
 
-### v3.0 — Advanced Features (Future)
+### v3.0 - Advanced Features (Future)
 
 - Conditional proposal templates (if/then logic)
 - Automated execution via keeper networks
