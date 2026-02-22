@@ -1,4 +1,4 @@
-# CrossGov - Cross-DAO Coordination for Solana Realms ^^
+# CrossGov - Cross-DAO Coordination for Realms ^^
 
 CrossGov is a coordination layer for Solana DAOs built on top of [Realms](https://realms.today). It enables multiple DAOs to link their proposals into a single **cross-proposal** with configurable approval conditions and real-time on-chain voting tracking.
 
