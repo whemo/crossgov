@@ -1,125 +1,120 @@
-# CrossGov - Cross-DAO Coordination for Realms ^^
+# CrossGov ☆ Cross-DAO Coordination for Realms
 
-CrossGov is a coordination layer for Solana DAOs built on top of [Realms](https://realms.today). It enables multiple DAOs to link their proposals into a single **cross-proposal** with configurable approval conditions and real-time on-chain voting tracking.
+coordination layer for Solana DAOs built on top of Realms. link proposals from multiple DAOs into one cross-proposal, set approval conditions, track votes live from the blockchain.
 
-## What It Does???
-
-When DAOs need to coordinate joint decisions, CrossGov allows them to:
-
-1. **Link proposals** from 2-10 different DAOs into one coordinated cross-proposal
-2. **Set approval conditions** — unanimous, majority, weighted, or first-response
-3. **Track votes live** — see each DAO's voting status pulled directly from the blockchain
-4. **Auto-evaluate outcomes** — overall status updates based on your chosen condition
-
-### Example Use Case
-
-> *"We will execute our proposal only if Bonk DAO AND Jito DAO also approve their linked proposals"*
-
-## Features
-
-- **4 Approval Conditions:**
-  - **Unanimous** — All DAOs must approve
-  - **Majority** — More than half must approve
-  - **Weighted** — Custom weights per DAO
-  - **First Response** — Any single DAO approval triggers
-- **Live On-Chain Data** — Real-time vote counts and quorum from SPL Governance
-- **Wallet Integration** — Phantom & Solflare support
-- **Responsive Design** — Works on desktop and mobile
-
-## Roadmap
-
-### v1.0 - Coordination Layer (Current)
-
-**Implemented in this release**
-
-- Link proposals from multiple DAOs into cross-proposals
-- Real-time voting status from on-chain data
-- 4 approval conditions (Unanimous, Majority, Weighted, First Response)
-- Dashboard with live tracking
-- Proposal detail pages with vote feed
-
-**How it works:**
-
-DAO A creates proposal: "Transfer 50k USDC to address X"
-DAO B creates proposal: "Allocate 500k tokens to pool"
-Both proposals are linked via CrossGov.
-
-DAO A votes Yes. DAO B votes No.
-CrossGov shows: **"Rejected — DAO B declined"**.
-
-**Important:** CrossGov is a **coordination tool, not blocking**. It cannot prevent DAO A from executing their proposal if it passed. But it provides transparency — participants see the other side rejected, so they know not to execute.
-
-**Real-world protection:** If DAO A sends funds after DAO B rejected, it's a public reputational risk. All proposals are on-chain, fully transparent.
+we needed this because coordinating joint DAO decisions through discord messages doesn't really work when you're dealing with actual treasury movements ^^
 
 ---
 
-### v2.0 - Escrow Protection (Planned)
+## what it does ✧
 
-**Smart contract escrow for atomic execution**
+CrossGov lets multiple DAOs (2-10) link their proposals together and agree on conditions before anyone executes anything.
 
-The real solution to coordination risk:
+1. **link proposals** from different DAOs into one coordinated cross-proposal
+2. **set approval conditions** - unanimous, majority, weighted, or first-response
+3. **track votes live** - status pulled directly from SPL Governance onchain accounts
+4. **auto-evaluate** - overall result updates based on the condition you picked
 
-1. Both DAOs deposit funds/assets into a smart contract escrow
-2. Escrow holds funds while voting happens
-3. If all DAOs approve → funds are released to intended recipients
-4. If any DAO rejects → funds return to original owners
+> *"we execute our proposal only if Bonk DAO and Jito DAO also approve theirs"*
 
-**Benefits:**
-- No counterparty risk
-- Atomic execution — all or nothing
-- No reputational games needed
+that kind of thing
 
 ---
 
-### v3.0 - Advanced Features (Future)
+## how it works ★
 
-- Conditional proposal templates (if/then logic)
-- Automated execution via keeper networks
-- Cross-DAO treasury management
-- Governance analytics and insights
+```
+DAO A → proposal: "Transfer 50k USDC to address X"
+DAO B → proposal: "Allocate 500k tokens to pool"
 
-## Tech Stack
+linked via CrossGov.
 
-- **Framework:** Next.js 16 (App Router, TypeScript)
-- **Styling:** TailwindCSS v4
-- **Blockchain:** @solana/web3.js, @realms-today/spl-governance
-- **Wallet:** Solana Wallet Adapter
+DAO A votes Yes ✓
+DAO B votes No ✗
 
-## Getting Started
+CrossGov: "Rejected - DAO B declined"
+```
 
-### Prerequisites
+CrossGov v1 is a coordination tool (!) - it won't prevent DAO A from executing if they really want to. but everything is on-chain and transparent - if someone acts after the other side rejected, everyone sees it.
 
-- Node.js 18+
-- A Solana wallet (Phantom or Solflare)
+reputation risk on the blockchain is permanent ^^
 
-### Installation
+*(for actual cryptographic guarantees - escrow in v2, see roadmap)*
+
+---
+
+## approval conditions ✦
+
+**Unanimous** - all DAOs must approve. for critical decisions.
+
+**Majority** - more than half say yes. works well with 3+ DAOs.
+
+**Weighted** - custom weight per DAO. when participants aren't equal.
+
+**First Response** - one approval is enough. race mode.
+
+---
+
+## stack ⟡
+
+- Next.js 16 (App Router, TypeScript)
+- TailwindCSS v4
+- @solana/web3.js
+- @realms-today/spl-governance
+- Solana Wallet Adapter (Phantom & Solflare)
+
+---
+
+## getting started ˚✩
+
+Node.js 18+ and a Solana wallet required.
 
 ```bash
-# Clone the repository
 git clone <your-repo-url>
 cd crossgov
-
-# Install dependencies
 npm install
 
-# Set up environment variables
 cp .env.local.example .env.local
-# Edit .env.local and add your Helius RPC API key
+```
 
-# Run development server
+`.env.local`:
+```
+NEXT_PUBLIC_SOLANA_RPC_URL=https://mainnet.helius-rpc.com/?api-key=YOUR_KEY_HERE
+```
+
+```bash
 npm run dev
+# → http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+---
 
-### Environment Variables
+## roadmap ☆
 
-Create a `.env.local` file in the root directory:
+### v1.0 - coordination layer ✓ ← current
 
-```env
-NEXT_PUBLIC_SOLANA_RPC_URL=https://mainnet.helius-rpc.com/?api-key=YOUR_API_KEY
-```
+proposal linking, live vote tracking, 4 approval conditions, dashboard. works, usable now.
 
-## License
+### v2.0 - escrow protection ⟡
 
-MIT
+smart contract escrow:
+1. DAOs deposit funds into escrow
+2. escrow holds while voting happens
+3. all approve → funds released
+4. someone rejects → funds returned
+
+### v3.0 - advanced ✧
+
+conditional templates (if/then), automated execution via keepers, cross-DAO treasury management, governance analytics.
+
+---
+
+## why this exists
+
+couldn't find a tool for coordinating proposals across multiple Solana DAOs. so we made one ^^
+
+---
+
+MIT license.
+
+*DAOs coordinating through discord screenshots era is over* ˚ʚ♡ɞ˚
