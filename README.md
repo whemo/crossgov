@@ -70,7 +70,7 @@ reputation risk on the blockchain is permanent ^^
 Node.js 18+ and a Solana wallet required.
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/whemo/crossgov.git
 cd crossgov
 npm install
 
